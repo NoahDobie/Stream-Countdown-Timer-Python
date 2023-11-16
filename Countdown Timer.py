@@ -205,7 +205,6 @@ def main():
     root = tk.Tk()
     root.resizable(False, False)
     app = CountdownTimerApp(root)
-    root.protocol("WM_DELETE_WINDOW", root.iconify)  # Minimize instead of closing
 
     root.mainloop()
 
