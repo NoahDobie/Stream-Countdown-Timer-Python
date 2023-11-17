@@ -10,6 +10,7 @@ Seamless integration with Streamlabs: create a Text source for easy display.
 
 **Customization:**
 Easily modify the Python code to your liking and convert it to an executable (.exe) for convenience.
+It uses Tkinter for the GUI so super simple and basic to make changes!
 
 **Functionality:**
 Pause, resume, and reset the countdown timer during your live stream.
@@ -19,6 +20,8 @@ Saves to a file that can be read from streaming software and updates automatical
 Download and customize the Python script.
 Save to a specified location.
 Integrate into Streamlabs using a Text source for display.
+
+There might be some random bugs, but generally, it works great! Just be relatively slow with button presses!
 
 ## Program Preview
 ![Screenshot 2023-11-16 161843](https://github.com/NoahDobie/Stream-Countdown-Timer-Python/assets/122558645/c977954c-b829-4d65-b18d-bda298383ffe)
