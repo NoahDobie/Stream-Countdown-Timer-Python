@@ -1,4 +1,4 @@
-# Stream-Countdown-Timer-Python
+# Stream Countdown Timer (Python-based)
 One day, I was in the middle of a stream and thought, "Hey, wouldn't it be cool to have a countdown timer on the screen?"
 Checked out a couple of options, but they were like those big, clunky programs with a gazillion features I'd never touch!
 Decided to whip up my own super simple countdown timer for the stream – just what I needed!🚀
