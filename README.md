@@ -28,13 +28,13 @@ There might be some random bugs, but generally, it works great! Just be relative
 
 ## Usage in Streamlabs
 
-Open Streamlabs!
-Navigate to Sources and add a Source
-![Screenshot 2023-11-16 162451](https://github.com/NoahDobie/Stream-Countdown-Timer-Python/assets/122558645/491b9473-7a58-45a7-95af-60105961f1a6)
+**Open Streamlabs!<br />
+Navigate to Sources and add a Source<br />**
+![Screenshot 2023-11-16 162451](https://github.com/NoahDobie/Stream-Countdown-Timer-Python/assets/122558645/491b9473-7a58-45a7-95af-60105961f1a6)<br />
 
-Create a new Text source
-![Screenshot 2023-11-16 162503](https://github.com/NoahDobie/Stream-Countdown-Timer-Python/assets/122558645/8e8d03fd-0d89-48bf-82ca-0c823b2e3840)
+**Create a new Text source<br />**
+![Screenshot 2023-11-16 162503](https://github.com/NoahDobie/Stream-Countdown-Timer-Python/assets/122558645/8e8d03fd-0d89-48bf-82ca-0c823b2e3840)<br />
 
-Select "read from file"
+**Select "read from file"<br />**
 ![Screenshot 2023-11-16 162531](https://github.com/NoahDobie/Stream-Countdown-Timer-Python/assets/122558645/f8879877-e441-4290-b69b-e8467cdb1245)
 
