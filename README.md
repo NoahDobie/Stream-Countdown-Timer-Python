@@ -12,8 +12,8 @@ Seamless integration with Streamlabs: create a Text source for easy display.
 Easily modify the Python code to your liking and convert it to an executable (.exe) for convenience.
 
 **Functionality:**
-Pause, resume, and reset the countdown timer during your livestream.
-Ensure precise timing for your broadcast with customizable intervals.
+Pause, resume, and reset the countdown timer during your live stream.
+Saves to a file that can be read from streaming software and updates automatically!
 
 **Usage:**
 Download and customize the Python script.
