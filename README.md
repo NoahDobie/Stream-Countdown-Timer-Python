@@ -19,3 +19,6 @@ Saves to a file that can be read from streaming software and updates automatical
 Download and customize the Python script.
 Save to a specified location.
 Integrate into Streamlabs using a Text source for display.
+
+## Program Preview
+![Screenshot 2023-11-16 161843](https://github.com/NoahDobie/Stream-Countdown-Timer-Python/assets/122558645/c977954c-b829-4d65-b18d-bda298383ffe)
