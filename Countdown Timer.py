@@ -13,7 +13,7 @@ class CountdownTimerApp:
         self.minutes_var = tk.StringVar(value="0")
         self.seconds_var = tk.StringVar(value="0")
         self.path_var = tk.StringVar(value="")
-        self.remaining_time = tk.StringVar(value="00:00:00")
+        self.remaining_time = tk.StringVar(value="00 : 00 : 00")
         self.time = 0
 
         self.file_path = ""
@@ -69,7 +69,7 @@ class CountdownTimerApp:
         else:
             self.remaining_time.set("Select file path!")
 
-    def check_value(self, variable):
+    def check_not_zero(self, variable):
         value = variable.get()
         if not value:
             variable.set(0)
@@ -85,9 +85,9 @@ class CountdownTimerApp:
 
         try:
             # Get input values
-            hours = self.check_value(self.hours_var)
-            minutes = self.check_value(self.minutes_var)
-            seconds = self.check_value(self.seconds_var)
+            hours = self.check_not_zero(self.hours_var)
+            minutes = self.check_not_zero(self.minutes_var)
+            seconds = self.check_not_zero(self.seconds_var)
 
             # Check for negative values
             if any(val < 0 for val in [hours, minutes, seconds]):
@@ -120,9 +120,9 @@ class CountdownTimerApp:
         self.timer_state = "START"
         self.toggle_button["text"] = "Start"
 
-        remaining_time_str = "{:02d}:{:02d}:{:02d}".format(
-            self.check_value(self.hours_var),
-            self.check_value(self.minutes_var),
+        remaining_time_str = "{:02d} : {:02d} : {:02d}".format(
+            self.check_not_zero(self.hours_var),
+            self.check_not_zero(self.minutes_var),
             self.check_not_zero(self.seconds_var)
         )
         self.remaining_time.set(remaining_time_str)
@@ -141,7 +141,7 @@ class CountdownTimerApp:
         self.toggle_button["text"] = "Pause"
 
         with open(self.file_path, "r") as file:
-            hours, minutes, seconds = map(int, file.readline().split(':'))
+            hours, minutes, seconds = map(int, file.readline().split(' : '))
             self.time = hours * 3600 + minutes * 60 + seconds
 
         self.update_countdown()
@@ -151,7 +151,7 @@ class CountdownTimerApp:
             hours, remainder = divmod(self.time, 3600)
             minutes, seconds = divmod(remainder, 60)
 
-            remaining_time_str = "{:02d}:{:02d}:{:02d}".format(hours, minutes, seconds)
+            remaining_time_str = "{:02d} : {:02d} : {:02d}".format(hours, minutes, seconds)
             self.remaining_time.set(remaining_time_str)
             self.save_countdown(remaining_time_str)
 
@@ -205,6 +205,7 @@ def main():
     root = tk.Tk()
     root.resizable(False, False)
     app = CountdownTimerApp(root)
+    root.protocol("WM_DELETE_WINDOW", root.iconify)  # Minimize instead of closing
 
     root.mainloop()
 
